@@ -1,0 +1,625 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="rS3-R9-Ivy">
+    <dependencies>
+        <deployment defaultVersion="1552" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="cUi-kZ-frf">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="rS3-R9-Ivy" sceneMemberID="viewController">
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="yXu-0R-QUA">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="wS6-03-teM" kind="relationship" relationship="rootViewController" id="hPW-D1-ZPe"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eq9-QA-ai8" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1" y="64"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="HZd-g5-9GK">
+            <objects>
+                <viewController id="wS6-03-teM" customClass="HomeViewController" sceneMemberID="viewController">
+                    <view key="view" clipsSubviews="YES" contentMode="scaleToFill" id="BxR-DI-lTR">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fundo_introducao.jpg" id="25u-U3-fTC">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <view autoresizesSubviews="NO" contentMode="scaleToFill" id="vpr-HA-zMM">
+                                <rect key="frame" x="0.0" y="434" width="320" height="414"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="fLg-d9-5l5">
+                                        <rect key="frame" x="33" y="2" width="254" height="53"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="bt_continuar.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="EKx-Re-pIq" kind="push" id="VsF-yo-Hf3"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="3iE-2j-U5P"/>
+                    <connections>
+                        <segue destination="plZ-vk-EiE" kind="push" identifier="home" id="cRi-EY-WvZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fMi-cb-8UN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="432" y="70"/>
+        </scene>
+        <!--Cadastro View Controller-->
+        <scene sceneID="xRO-LA-tDG">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="EKx-Re-pIq" customClass="CadastroViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="K9g-9b-e0P">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" id="kLh-HK-xas">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fundo_cadastro.png" id="0gW-Wt-x5z">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                    <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" id="hzB-s4-cTN">
+                                        <rect key="frame" x="47" y="123" width="146" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="EKx-Re-pIq" id="5XR-qD-Ve4"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" id="rVg-EC-Nvz">
+                                        <rect key="frame" x="47" y="163" width="146" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="EKx-Re-pIq" id="oW7-CO-qtj"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" id="4pW-nj-C2C">
+                                        <rect key="frame" x="239" y="163" width="37" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="EKx-Re-pIq" id="56O-rW-TXw"/>
+                                        </connections>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="vNh-Dc-riU">
+                                        <rect key="frame" x="47" y="267" width="152" height="22"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <state key="normal" title="Selecione seu País">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="disabled">
+                                            <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnPaisPressed:" destination="EKx-Re-pIq" eventType="touchUpInside" id="lOM-bt-vdw"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="p6e-bb-2it">
+                                        <rect key="frame" x="47" y="307" width="234" height="22"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <state key="normal" title="Selecione sua cidade">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="disabled">
+                                            <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnCidadePressed:" destination="EKx-Re-pIq" eventType="touchUpInside" id="vEQ-bz-Kjh"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="pPT-Cu-ca6">
+                                        <rect key="frame" x="47" y="347" width="234" height="22"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <state key="normal" title="Selecione seu Bairro">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="disabled">
+                                            <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnBairroPressed:" destination="EKx-Re-pIq" eventType="touchUpInside" id="vch-Vt-5Z6"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="hc8-pf-fgm">
+                                        <rect key="frame" x="244" y="267" width="37" height="22"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <state key="normal" title="--">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="disabled">
+                                            <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnEstadoPressed:" destination="EKx-Re-pIq" eventType="touchUpInside" id="8D8-NO-AZi"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="3gc-Gk-YGX">
+                                        <rect key="frame" x="33" y="378" width="254" height="36"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="bt_participar.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnParticiparPressed:" destination="EKx-Re-pIq" eventType="touchUpInside" id="UZK-Aa-eO5"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="mUj-dR-CsZ">
+                                        <rect key="frame" x="33" y="423" width="254" height="36"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="bt_visualizar.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnVisualizarPressed:" destination="EKx-Re-pIq" eventType="touchUpInside" id="1Z3-wa-eGJ"/>
+                                            <segue destination="plZ-vk-EiE" kind="push" identifier="goVisualizar" id="EnX-1O-x8K"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="jg9-If-l0e">
+                                        <rect key="frame" x="52" y="464" width="217" height="22"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="bt_termos_politica.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="oYu-bO-e5K" kind="push" id="MDx-Ph-VnI"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="QVr-Go-DML">
+                                        <rect key="frame" x="90" y="490" width="140" height="22"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="bt_sobre_o_projeto.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="zLu-Kf-1h4" kind="push" id="guZ-NO-Nj6"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="abc-BW-7X8">
+                                        <rect key="frame" x="219" y="100" width="35" height="55"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="homem_nao.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="selected" image="homem_sim.png"/>
+                                        <connections>
+                                            <action selector="btnSexPressed:" destination="EKx-Re-pIq" eventType="touchUpInside" id="Hok-dN-qMl"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="KMh-3d-Wp5">
+                                        <rect key="frame" x="261" y="100" width="35" height="55"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="mulher_nao.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="selected" image="mulher_sim.png"/>
+                                        <connections>
+                                            <action selector="btnSexPressed:" destination="EKx-Re-pIq" eventType="touchUpInside" id="SMC-9U-Tfi"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </scrollView>
+                            <view contentMode="scaleToFill" id="oWB-VE-D6R">
+                                <rect key="frame" x="0.0" y="568" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <pickerView contentMode="scaleToFill" id="TTT-mb-UwB">
+                                        <rect key="frame" x="0.0" y="406" width="320" height="162"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="EKx-Re-pIq" id="YVl-03-dMr"/>
+                                            <outlet property="delegate" destination="EKx-Re-pIq" id="TX2-GP-hBo"/>
+                                        </connections>
+                                    </pickerView>
+                                    <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="XXY-s4-tga">
+                                        <rect key="frame" x="0.0" y="362" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <items>
+                                            <barButtonItem title="Cancelar" id="bzc-Fo-xiX">
+                                                <connections>
+                                                    <action selector="btnCancelPressed:" destination="EKx-Re-pIq" id="bl7-Vu-wEH"/>
+                                                </connections>
+                                            </barButtonItem>
+                                            <barButtonItem style="plain" systemItem="flexibleSpace" id="QdE-dv-8GW"/>
+                                            <barButtonItem title="Ok" id="b1q-pl-9bW">
+                                                <connections>
+                                                    <action selector="btnOkPressed:" destination="EKx-Re-pIq" id="cWe-vl-yQW"/>
+                                                </connections>
+                                            </barButtonItem>
+                                        </items>
+                                        <color key="barTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                    </toolbar>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <navigationItem key="navigationItem" id="pOa-Ks-Xzx"/>
+                    <connections>
+                        <outlet property="btnBairro" destination="pPT-Cu-ca6" id="fXa-eW-3SI"/>
+                        <outlet property="btnCidade" destination="p6e-bb-2it" id="uYk-vo-NWi"/>
+                        <outlet property="btnEstado" destination="hc8-pf-fgm" id="rzR-aY-6yy"/>
+                        <outlet property="btnHomem" destination="abc-BW-7X8" id="nde-dN-7VQ"/>
+                        <outlet property="btnMulher" destination="KMh-3d-Wp5" id="OZ8-jz-Y3n"/>
+                        <outlet property="btnPais" destination="vNh-Dc-riU" id="9Z4-q3-cAL"/>
+                        <outlet property="btnParticipar" destination="3gc-Gk-YGX" id="4Rk-Ij-nPZ"/>
+                        <outlet property="imgBackground" destination="0gW-Wt-x5z" id="SSE-Ts-NO6"/>
+                        <outlet property="pckLocal" destination="TTT-mb-UwB" id="A6O-AM-dVC"/>
+                        <outlet property="scroll" destination="kLh-HK-xas" id="FXp-zg-QhI"/>
+                        <outlet property="txtApelido" destination="hzB-s4-cTN" id="S7I-fU-Oc2"/>
+                        <outlet property="txtEmail" destination="rVg-EC-Nvz" id="AI9-AA-mZ7"/>
+                        <outlet property="txtIdade" destination="4pW-nj-C2C" id="rfb-qF-wWy"/>
+                        <outlet property="viewPicker" destination="oWB-VE-D6R" id="dQE-qd-kFA"/>
+                        <segue destination="plZ-vk-EiE" kind="push" identifier="home" id="61k-3k-M9h"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hWc-ph-Llj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="843" y="58"/>
+        </scene>
+        <!--Check In View Controller-->
+        <scene sceneID="u9N-Nk-JSi">
+            <objects>
+                <viewController id="plZ-vk-EiE" customClass="CheckInViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="U06-ob-Xsm">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" maximumZoomScale="2" id="MlE-Jk-B86">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="iMT-pJ-iKa">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <connections>
+                                    <outlet property="delegate" destination="plZ-vk-EiE" id="Kaz-I1-02U"/>
+                                </connections>
+                            </scrollView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo.png" id="Ds6-q9-paZ">
+                                <rect key="frame" x="2" y="1" width="158" height="104"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sombra.png" id="EaH-DU-19B">
+                                <rect key="frame" x="0.0" y="440" width="320" height="133"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coordenadas.png" id="I0z-kr-kxg">
+                                <rect key="frame" x="27" y="474" width="267" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Ioq-mW-y3J">
+                                <rect key="frame" x="20" y="492" width="280" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <state key="normal" image="botao_checkin.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnCheckInPressed:" destination="plZ-vk-EiE" eventType="touchUpInside" id="R5h-jQ-3uA"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="5AY-3o-axE" userLabel="Btn Participar">
+                                <rect key="frame" x="20" y="492" width="280" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <state key="normal" image="bt_participar.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnParticiparPressed:" destination="plZ-vk-EiE" eventType="touchUpInside" id="Z8W-hq-UFz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="top" lineBreakMode="middleTruncation" id="xRK-pz-Ass">
+                                <rect key="frame" x="248" y="28" width="52" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="bt_sobre.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="zLu-Kf-1h4" kind="push" id="SIx-Cs-NfY"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="      Seu Nome" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="JV9-oW-ZGk">
+                                <rect key="frame" x="43" y="477" width="81" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sua Localização" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="MgL-at-VGa">
+                                <rect key="frame" x="172" y="477" width="85" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wZW-HR-SZL">
+                                <rect key="frame" x="131" y="477" width="68" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="43L-Kv-wGD">
+                                <rect key="frame" x="213" y="477" width="68" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="1" id="AQt-xg-ddW">
+                                <rect key="frame" x="33" y="544" width="254" height="2"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            </progressView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="pwQ-4t-YF5"/>
+                    <connections>
+                        <outlet property="btnCheckIn" destination="Ioq-mW-y3J" id="gfP-S7-Vxb"/>
+                        <outlet property="btnParticipar" destination="5AY-3o-axE" id="Red-cM-mcQ"/>
+                        <outlet property="imgBackground" destination="iMT-pJ-iKa" id="NcY-gh-skV"/>
+                        <outlet property="lblLatitude" destination="wZW-HR-SZL" id="xoD-02-1KO"/>
+                        <outlet property="lblLongitude" destination="43L-Kv-wGD" id="mqt-Qa-WIr"/>
+                        <outlet property="lblNome" destination="JV9-oW-ZGk" id="ncW-yW-OWr"/>
+                        <outlet property="lblSuaLocalizacao" destination="MgL-at-VGa" id="fp7-de-5cj"/>
+                        <outlet property="pvProgress" destination="AQt-xg-ddW" id="SRk-DK-wEq"/>
+                        <outlet property="scroll" destination="MlE-Jk-B86" id="odg-op-ZUr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bj1-sP-OHJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1370" y="-107"/>
+        </scene>
+        <!--About View Controller-->
+        <scene sceneID="wfS-V4-haM">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="zLu-Kf-1h4" customClass="AboutViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1ga-8j-xV8">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="AWZ-G0-wOp">
+                                <rect key="frame" x="0.0" y="144" width="320" height="424"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fundo_about.jpg" id="4Za-O1-hGE">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="3125"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="JX1-58-WtU">
+                                <rect key="frame" x="6" y="2" width="308" height="99"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="bt_mapa_publico_voltar.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnVoltarPressed:" destination="zLu-Kf-1h4" eventType="touchUpInside" id="Qqr-cy-MnV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="7DJ-FB-igN">
+                                <rect key="frame" x="14" y="84" width="140" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="bt_logout.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnLogoutPressed:" destination="zLu-Kf-1h4" eventType="touchUpInside" id="kcc-46-T0M"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="lVS-4e-CB4">
+                                <rect key="frame" x="151" y="85" width="157" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="bt_termos privacidade.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="oYu-bO-e5K" kind="push" id="OvQ-nS-PAa"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <navigationItem key="navigationItem" id="WO6-k4-xob"/>
+                    <size key="freeformSize" width="320" height="4000"/>
+                    <connections>
+                        <outlet property="btnLougout" destination="7DJ-FB-igN" id="r4o-HT-oJs"/>
+                        <outlet property="scroll" destination="AWZ-G0-wOp" id="TZx-im-Y2p"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="adx-kh-sgL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="683" y="774"/>
+        </scene>
+        <!--Politica View Controller-->
+        <scene sceneID="gtO-xe-4KN">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="oYu-bO-e5K" customClass="PoliticaViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kAG-u8-pt3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="FY0-GI-gee">
+                                <rect key="frame" x="20" y="99" width="280" height="449"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <string key="text">Termos de Uso
+
+Olá, bem-vindo aos nossos Termos e Condições de Uso. Isso é importante e afeta seus direitos legais, por isso leia nossa Política de Privacidade com atenção. Aqui vamos nós...
+
+1. Introduções
+Obrigado por participar da intervenção do Mapa de Público, você está entrando em um acordo vinculativo com o Mapa de Público no Brasil. Seu Acordo conosco inclui esses Termos e Condições de Uso e nossa Política de Privacidade. Se você não concordar com estes termos, por favor não use o Serviço.
+Temos prazer em trazer essa possibilidade para você. O Mapa de Público inclui características sociais e interativas. Para utilizar o Mapa de Público, você precisa (a) ter 16 anos ou mais de idade, (b) ter o poder de entrar em um Acordo vinculativo conosco e não estar impedido de fazê-lo, nos termos de qualquer legislação aplicável.
+
+2. Licença e cessão
+O Mapa de Público e o conteúdo fornecido por ele são públicos e nós concedemos a você uma licença limitada para fazer uso pessoal e não comercial do Mapa de Público e receber o conteúdo de mídia disponibilizado através do Mapa de Público em seu país local. Esta Licença permanecerá em vigor por um período de 20 anos, salvo encerrada por você ou pelo Mapa de Público.
+
+3. Conteúdo gerado pelo usuário
+Os usuários do Mapa de Público podem publicar e/ou contribuir com conteúdo ("publicação") no Mapa de Público. Você é o único responsável por qualquer Conteúdo do Usuário que você fornecer e por todas as consequências do mesmo. Você declara que tem o direito de publicar qualquer Conteúdo do Usuário no Mapa de Público, e que tal Conteúdo do Usuário, ou o seu uso por nós como contemplado por este Acordo, não: (a) viola estes Acordos, a legislação aplicável ou a propriedade intelectual ou direitos de publicidade de terceiros, ou (b) implica em qualquer afiliação, endosso, aprovação ou cooperação com você ou seu Conteúdo do Usuário pelo Mapa de Público ou qualquer artista, , entidade ou indivíduo sem o consentimento expresso por escrito de tal indivíduo ou entidade. Você nos concede uma licença mundial não exclusiva, transferível, sublicenciável e não onerosa para usar qualquer Conteúdo do Usuário que você publicar no, ou relacionado ao, Mapa de Público. Essa licença durará até você encerrar sua conta do Mapa de Público, exceto no caso do Conteúdo do Usuário que você tenha publicado, tornada público e/ou compartilhado com outras pessoas. Além dos direitos especificamente concedidos aqui, você manterá a propriedade de todos os direitos, incluindo os direitos de propriedade intelectual, no Conteúdo do Usuário que você publicar no Mapa de Público, exceto que, conforme aplicável nos termos da legislação brasileira, você concorda em renunciar a seu direito de ser identificado como o autor de qualquer Conteúdo do Usuário no Mapa de Público e seu direito de se opor a tratamento depreciativo de tal Conteúdo do Usuário.
+O Mapa de Público não irá monitorar, revisar ou editar o Conteúdo do Usuário, mas reserva-se o direito de remover ou desabilitar o acesso a qualquer Conteúdo do Usuário por qualquer motivo ou sem motivo, incluindo, sem limitação, Conteúdo do Usuário que, a critério exclusivo do Mapa de Público, viole esses Acordos. O Mapa de Público pode executar essas ações sem notificação prévia a você. A remoção ou desativação do acesso ao Conteúdo do Usuário estará a nosso critério exclusivo, e nós não prometemos remover ou desabilitar o acesso a qualquer Conteúdo do Usuário específico.
+O Mapa de Público não é responsável pelo Conteúdo do Usuário nem endossa qualquer opinião contida no Conteúdo do Usuário. Caso você considere que qualquer Conteúdo do Usuário viole os seus direitos de propriedade intelectual, ou caso você considere que qualquer Conteúdo do Usuário não esteja em conformidade com as Diretrizes do Usuário (Seção 5 abaixo) ou que os seus direitos nos termos da legislação aplicável podem ter sido de outra forma violados por qualquer Conteúdo do Usuário, por favor entre em contato conosco.
+
+4. Retribuição
+Em retribuição aos direitos concedidos a você ao abrigo desses Termos, você nos concede o direito de permitir que o Mapa de Público utilize o processador, largura de banda e hardware de armazenamento em seu Dispositivo, a fim de facilitar a operação do Serviço.
+Você concede ao Mapa de Público uma licença mundial não exclusiva, transferível, sublicenciável, não onerosa, perpétua, para usar, reproduzir, disponibilizar ao público, publicar, traduzir e distribuir qualquer Conteúdo do Usuário que você publicar ou de outra forma fornecer através do Serviço Mapa de Público.
+Esses termos não têm a intenção de conceder direitos a ninguém exceto você e o Mapa de Público e em nenhum caso esses Termos criarão quaisquer direitos de terceiros beneficiários. Qualquer incapacidade do Mapa de Público em fazer cumprir esses Termos ou qualquer provisão dos mesmos não constituirá uma renúncia do direito do Mapa de Público em fazê-lo.
+
+5. Diretrizes do Usuário
+Nós estabelecemos algumas regras básicas para você seguir ao utilizar o Serviço, de modo a garantir que o Mapa de Público permaneça agradável para todos. Por favor, siga estas regras e incentive os outros usuários a fazer o mesmo.
+Por favor, respeite o Mapa de Público e outros usuários do Serviço Mapa de Público. Não se envolva em qualquer atividade no Serviço ou faça o upload de Conteúdo do Usuário, incluindo o registro e/ou uso de nome de usuário, que seja ou inclua material que (a) é ofensivo, abusivo, difamatório, pornográfico ou obsceno; (b) é ilegal, ou destinado a promover ou cometer um ato ilegal de qualquer tipo, incluindo, sem limitação, violação dos direitos de propriedade intelectual e direitos de privacidade, (c) inclua dados pessoais de terceiros ou se destine a solicitar esses dados pessoais, (d) inclua conteúdo malicioso, como malware, cavalos de troia ou vírus, ou de outra forma interfira com o acesso de qualquer usuário ao Serviço; (e) tem a intenção ou assedie ou intimide outros usuários; (f) personifique ou falsifique a sua afiliação com outro usuário, pessoa ou entidade, ou de outra forma fraudulenta, falsa, enganosa; (g) utiliza meios automatizados para promover artificialmente conteúdo, (h) envolve atividades comerciais ou de vendas, tais como publicidade, concursos, sorteios, ou esquemas de pirâmide; (i) promove produtos ou serviços comerciais, (j) interfere com o Serviço Mapa de Público, sonda ou tenta sondar, examinar ou testar as vulnerabilidades no Serviço ou sistemas de computador ou de rede do Mapa de Público, ou viole quaisquer medidas de segurança ou autenticação do Mapa de Público, ou (k) esteja em conflito com Acordo, conforme determinado pelo Mapa de Público. Você concorda que o Mapa de Público também pode retomar seu nome de usuário por qualquer motivo.
+Por favor, seja cuidadoso sobre o que você torna público no Mapa de Público. O Serviço Mapa de Público inclui características sociais e interativas, incluindo a capacidade de publicar o Conteúdo do Usuário, compartilhar conteúdo, e tornar públicas certas informações sobre você. Lembre-se que a informação compartilhada ou publicamente disponível pode ser usada e compartilhada novamente por outros usuários no Mapa de Público ou em toda a web, então por favor use o Mapa de Público cuidadosamente e gerencie as configurações da sua conta regularmente. O Mapa de Público não tem qualquer responsabilidade por suas escolhas em tornar públicos qualquer ação ou material no Serviço.
+
+6. Limitações tecnológicas e modificações
+Você entende e concorda que o Mapa de Público não tem nenhuma obrigação de manter, suportar, aperfeiçoar ou atualizar o Serviço, ou fornecer todo ou qualquer conteúdo específico através do Serviço.
+
+7. Prazo e rescisão
+Estes Termos continuarão a ser aplicáveis a você até que sejam rescindidos por você ou pelo Mapa de Público. O Mapa de Público pode rescindir os Termos ou suspender o acesso ao Serviço Mapa de Público, a qualquer momento, inclusive no caso de uso não autorizado real ou suspeito do Serviço Mapa de Público ou a não conformidade com os Termos. 
+
+8. Limitação
+Você concorda que, na medida do permitido pela legislação aplicável, a sua única e exclusiva solução para qualquer problema ou insatisfação com o Mapa de Público é desinstalar qualquer software Mapa de Público e parar de usar o Serviço Mapa de Público. 
+ATÉ O LIMITE MÁXIMO PERMITIDO PELA LEGISLAÇÃO, EM HIPÓTESE ALGUMA O MAPA DE PÚBLICO SERÁ RESPONSÁVEL POR (i) QUAISQUER DANOS INDIRETOS, ESPECIAIS, ACIDENTAIS, PUNITIVOS, EXEMPLARES OU INDIRETOS (INCLUINDO PERDA DE USO, DADOS, NEGÓCIOS OU LUCROS), DANOS DECORRENTES DO USO OU IMPOSSIBILIDADE DE USO DO SERVIÇO MAPA DE PÚBLICO, INDEPENDENTEMENTE DA TEORIA JURÍDICA, INDEPENDENTEMENTE DO MAPA DE PÚBLICO TER SIDO AVISADO DA POSSIBILIDADE DE TAIS DANOS, E MESMO QUE UMA SOLUÇÃO TENHA FALHADO EM SEU PROPÓSITO ESSENCIAL; (ii) RESPONSABILIDADE MÁXIMA POR TODAS AS REIVINDICAÇÕES RELATIVAS AO SERVIÇO MAPA DE PÚBLICO.
+Nada nesses Acordos elimina ou limita a responsabilidade do Mapa de Público por fraude, falsidade ideológica, morte ou lesões pessoais causadas por sua negligência. Alguns aspectos desta seção podem não se aplicar em algumas jurisdições.
+
+9. Acordo integral
+Estes Acordos constituem todos os termos e condições acordadas entre você e o Mapa de Público e substituem quaisquer acordos anteriores em relação ao objeto destes Acordos, orais ou por escrito. Quaisquer termos ou condições adicionais ou diferentes em relação ao objeto dos Acordos em qualquer comunicação oral ou por escrito de você para o Mapa de Público serão nulos. Você declara que não aceitou os Acordos em dependência de quaisquer declarações orais ou por escrito feitas pelo Mapa de Público que não estão contidas nos acordos.
+
+10. Autonomia
+Caso qualquer disposição dos Termos seja considerada inválida ou inexequível, por qualquer motivo ou a qualquer medida, tal invalidade ou inexigibilidade não deve de qualquer forma afetar ou tornar inválidas ou inexequíveis as disposições restantes dos Termos, bem como a aplicação da referida disposição deve ser aplicada até o limite permitido pela legislação.
+
+11. Escolha de foro, arbitragem obrigatória e local
+Estes Acordos estão sujeitos à legislação brasileira, sem levar em conta a escolha ou conflitos de princípios jurídicos. Além disso, você e o Mapa de Público concordam com a jurisdição exclusiva dos tribunais da cidade de São Paulo, Estado de São Paulo, Brasil, para resolver qualquer disputa, reivindicação ou controvérsia que surja em relação a estes Acordos.
+Obrigado por ler nossos Termos. Esperamos que você goste do Mapa de Público.
+Contato: lab@labexperimental.org
+
+
+
+
+Políticas de Privacidade
+
+Olá, bem-vindo à nossa Política de Privacidade. 
+
+Esta Política de Privacidade ajuda você a tomar decisões informadas sobre o seu relacionamento conosco, então por favor leia atentamente. Aqui vamos nós…
+
+1. Introdução
+Obrigado por participar da intervenção artística Mapa de Público na Virada Cultural de São Paulo. Para fornecer a você o Serviço Mapa de Público nós precisaremos coletar algumas informações sobre você, e essa Política de Privacidade é onde descrevemos as informações que coletamos, o que fazemos com elas, e como você pode gerenciar e controlar o uso de suas informações. Os dados coletados pelo Mapa de Público devem ser tratados de acordo com as leis da República Federativa do Brasil. Ao usar ou interagir com o Serviço, você está entrando em um contrato vinculativo conosco e consentindo com o uso de suas informações conforme explicado nesta Política de Privacidade.[a] Caso você não concorde com esses termos, por favor não use o Serviço.
+
+
+2. As informações que coletamos
+2.1 Dados do cadastro
+Quando você se cadastra no Mapa de Público, podemos coletar as informações que solicitamos, como seu nome de usuário, endereço de e-mail, sexo, código postal e país. Podemos armazenar essas informações de modo que ela possa ser utilizada para as finalidades indicadas na Seção 3.
+2.2 Utilização, dados do cadastro
+Quando você usa o serviço, nós coletamos automaticamente determinadas informações, incluindo: (i) Conteúdo do Usuário que você publicar e/ou contribuir para o Serviço (conforme definido nos Termos e Condições de Uso); (ii) dados técnicos que podem incluir a URL de onde você está vindo, o seu endereço IP, ID único do dispositivo, rede e desempenho do computador, tipo de navegador, idioma e informações de identificação, informações transacionais que possibilitem o gerenciamento de direitos digitais, sistema operacional e versão do aplicativo, e (iii) informação de localização.
+
+3. Como compartilhamos as informações que coletamos
+Podemos compartilhar as informações que coletamos, incluindo a sua informação pessoal, conforme a seguir:
+3.1 Encontrando você e compartilhando dentro do Mapa de Público
+O Mapa de Público é uma intervenção de arte e tecnologia. A maioria de suas informações no Mapa de Público será transformada em dados abertos (exceto email), e estará disponível publicamente para os outros por padrão, tais como o seu nome e/ou nome de usuário, idade, sexo e localização. Sua atividade no Serviço aparecerá para os data visualizadores que produzirão os mapas a partir desses dados.
+
+4. Arte e Interatividade
+Ao utilizar o serviço do Mapa de Público, você entrará em contato com uma conexão gigantesca de outros usuários, gerando uma visualização artística desses fluxos. Acreditamos que a arte e colaboração são ferramentas para uma sociedade mais harmonizada. Muito obrigado!
+
+5. Fale conosco
+Caso você tenha alguma pergunta ou comentário sobre essa Política de Privacidade, por favor entre em contato conosco. 
+
+Contato: lab@labexperimental.org</string>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="cN3-6f-Mu8">
+                                <rect key="frame" x="6" y="2" width="308" height="99"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="bt_mapa_publico_voltar.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnVoltarPressed:" destination="oYu-bO-e5K" eventType="touchUpInside" id="NmL-ct-UiA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <navigationItem key="navigationItem" id="MrP-eA-YNe"/>
+                    <size key="freeformSize" width="320" height="8750"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H7Y-xN-XcX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1224" y="736"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="botao_checkin.png" width="254" height="36"/>
+        <image name="bt_continuar.png" width="254" height="36"/>
+        <image name="bt_logout.png" width="133" height="39"/>
+        <image name="bt_mapa_publico_voltar.png" width="287" height="66"/>
+        <image name="bt_participar.png" width="254" height="36"/>
+        <image name="bt_sobre.png" width="29" height="28"/>
+        <image name="bt_sobre_o_projeto.png" width="140" height="21"/>
+        <image name="bt_termos privacidade.png" width="150" height="39"/>
+        <image name="bt_termos_politica.png" width="217" height="13"/>
+        <image name="bt_visualizar.png" width="254" height="36"/>
+        <image name="coordenadas.png" width="254" height="16"/>
+        <image name="fundo_about.jpg" width="320" height="3125"/>
+        <image name="fundo_cadastro.png" width="320" height="568"/>
+        <image name="fundo_introducao.jpg" width="320" height="568"/>
+        <image name="homem_nao.png" width="20" height="38"/>
+        <image name="homem_sim.png" width="20" height="38"/>
+        <image name="logo.png" width="138" height="58"/>
+        <image name="mulher_nao.png" width="20" height="37"/>
+        <image name="mulher_sim.png" width="20" height="37"/>
+        <image name="sombra.png" width="320" height="133"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="guZ-NO-Nj6"/>
+        <segue reference="MDx-Ph-VnI"/>
+        <segue reference="EnX-1O-x8K"/>
+    </inferredMetricsTieBreakers>
+</document>

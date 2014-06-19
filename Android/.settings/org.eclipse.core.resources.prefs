@@ -1,0 +1,10 @@
+eclipse.preferences.version=1
+encoding//src/com/applause/mapapublico/activities/CadastroActivity.java=UTF-8
+encoding//src/com/applause/mapapublico/activities/CheckinActivity.java=UTF-8
+encoding//src/com/applause/mapapublico/activities/HomeActivity.java=UTF-8
+encoding//src/com/applause/mapapublico/activities/SobreActivity.java=UTF-8
+encoding//src/com/applause/mapapublico/activities/SplashActivity.java=UTF-8
+encoding//src/com/applause/mapapublico/database/DataHelper.java=UTF-8
+encoding//src/com/applause/mapapublico/service/CadastroService.java=UTF-8
+encoding//src/com/applause/mapapublico/service/CheckInService.java=UTF-8
+encoding//src/com/applause/mapapublico/util/GPSTracker.java=UTF-8

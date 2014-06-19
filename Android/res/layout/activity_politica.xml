@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black" >
+
+    <Button
+        android:id="@+id/btnVoltar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bt_mapa_publico_voltar" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnVoltar"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/btnVoltar"
+        android:layout_below="@+id/btnVoltar"
+        android:layout_marginTop="26dp"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Termos de Uso\n
+\n
+\nOlá, bem-vindo aos nossos Termos e Condições de Uso. Isso é importante e afeta seus direitos legais, por isso leia nossa Política de Privacidade com atenção. Aqui vamos nós...
+\n
+\n1. Introduções
+\nObrigado por participar da intervenção do Mapa de Público, você está entrando em um acordo vinculativo com o Mapa de Público no Brasil. Seu Acordo conosco inclui esses Termos e Condições de Uso e nossa Política de Privacidade. Se você não concordar com estes termos, por favor não use o Serviço.
+\nTemos prazer em trazer essa possibilidade para você. O Mapa de Público inclui características sociais e interativas. Para utilizar o Mapa de Público, você precisa (a) ter 16 anos ou mais de idade, (b) ter o poder de entrar em um Acordo vinculativo conosco e não estar impedido de fazê-lo, nos termos de qualquer legislação aplicável.
+\n
+\n2. Licença e cessão
+\nO Mapa de Público e o conteúdo fornecido por ele são públicos e nós concedemos a você uma licença limitada para fazer uso pessoal e não comercial do Mapa de Público e receber o conteúdo de mídia disponibilizado através do Mapa de Público em seu país local. Esta Licença permanecerá em vigor por um período de 20 anos, salvo encerrada por você ou pelo Mapa de Público.
+\n
+\n3. Conteúdo gerado pelo usuário
+\nOs usuários do Mapa de Público podem publicar e/ou contribuir com conteúdo (publicação) no Mapa de Público. Você é o único responsável por qualquer Conteúdo do Usuário que você fornecer e por todas as consequências do mesmo. Você declara que tem o direito de publicar qualquer Conteúdo do Usuário no Mapa de Público, e que tal Conteúdo do Usuário, ou o seu uso por nós como contemplado por este Acordo, não: (a) viola estes Acordos, a legislação aplicável ou a propriedade intelectual ou direitos de publicidade de terceiros, ou (b) implica em qualquer afiliação, endosso, aprovação ou cooperação com você ou seu Conteúdo do Usuário pelo Mapa de Público ou qualquer artista, , entidade ou indivíduo sem o consentimento expresso por escrito de tal indivíduo ou entidade. Você nos concede uma licença mundial não exclusiva, transferível, sublicenciável e não onerosa para usar qualquer Conteúdo do Usuário que você publicar no, ou relacionado ao, Mapa de Público. Essa licença durará até você encerrar sua conta do Mapa de Público, exceto no caso do Conteúdo do Usuário que você tenha publicado, tornada público e/ou compartilhado com outras pessoas. Além dos direitos especificamente concedidos aqui, você manterá a propriedade de todos os direitos, incluindo os direitos de propriedade intelectual, no Conteúdo do Usuário que você publicar no Mapa de Público, exceto que, conforme aplicável nos termos da legislação brasileira, você concorda em renunciar a seu direito de ser identificado como o autor de qualquer Conteúdo do Usuário no Mapa de Público e seu direito de se opor a tratamento depreciativo de tal Conteúdo do Usuário.
+\nO Mapa de Público não irá monitorar, revisar ou editar o Conteúdo do Usuário, mas reserva-se o direito de remover ou desabilitar o acesso a qualquer Conteúdo do Usuário por qualquer motivo ou sem motivo, incluindo, sem limitação, Conteúdo do Usuário que, a critério exclusivo do Mapa de Público, viole esses Acordos. O Mapa de Público pode executar essas ações sem notificação prévia a você. A remoção ou desativação do acesso ao Conteúdo do Usuário estará a nosso critério exclusivo, e nós não prometemos remover ou desabilitar o acesso a qualquer Conteúdo do Usuário específico.
+\nO Mapa de Público não é responsável pelo Conteúdo do Usuário nem endossa qualquer opinião contida no Conteúdo do Usuário. Caso você considere que qualquer Conteúdo do Usuário viole os seus direitos de propriedade intelectual, ou caso você considere que qualquer Conteúdo do Usuário não esteja em conformidade com as Diretrizes do Usuário (Seção 5 abaixo) ou que os seus direitos nos termos da legislação aplicável podem ter sido de outra forma violados por qualquer Conteúdo do Usuário, por favor entre em contato conosco.
+\n
+\n4. Retribuição
+\nEm retribuição aos direitos concedidos a você ao abrigo desses Termos, você nos concede o direito de permitir que o Mapa de Público utilize o processador, largura de banda e hardware de armazenamento em seu Dispositivo, a fim de facilitar a operação do Serviço.
+\nVocê concede ao Mapa de Público uma licença mundial não exclusiva, transferível, sublicenciável, não onerosa, perpétua, para usar, reproduzir, disponibilizar ao público, publicar, traduzir e distribuir qualquer Conteúdo do Usuário que você publicar ou de outra forma fornecer através do Serviço Mapa de Público.
+\nEsses termos não têm a intenção de conceder direitos a ninguém exceto você e o Mapa de Público e em nenhum caso esses Termos criarão quaisquer direitos de terceiros beneficiários. Qualquer incapacidade do Mapa de Público em fazer cumprir esses Termos ou qualquer provisão dos mesmos não constituirá uma renúncia do direito do Mapa de Público em fazê-lo.
+\n
+\n5. Diretrizes do Usuário
+\nNós estabelecemos algumas regras básicas para você seguir ao utilizar o Serviço, de modo a garantir que o Mapa de Público permaneça agradável para todos. Por favor, siga estas regras e incentive os outros usuários a fazer o mesmo.
+\nPor favor, respeite o Mapa de Público e outros usuários do Serviço Mapa de Público. Não se envolva em qualquer atividade no Serviço ou faça o upload de Conteúdo do Usuário, incluindo o registro e/ou uso de nome de usuário, que seja ou inclua material que (a) é ofensivo, abusivo, difamatório, pornográfico ou obsceno; (b) é ilegal, ou destinado a promover ou cometer um ato ilegal de qualquer tipo, incluindo, sem limitação, violação dos direitos de propriedade intelectual e direitos de privacidade, (c) inclua dados pessoais de terceiros ou se destine a solicitar esses dados pessoais, (d) inclua conteúdo malicioso, como malware, cavalos de troia ou vírus, ou de outra forma interfira com o acesso de qualquer usuário ao Serviço; (e) tem a intenção ou assedie ou intimide outros usuários; (f) personifique ou falsifique a sua afiliação com outro usuário, pessoa ou entidade, ou de outra forma fraudulenta, falsa, enganosa; (g) utiliza meios automatizados para promover artificialmente conteúdo, (h) envolve atividades comerciais ou de vendas, tais como publicidade, concursos, sorteios, ou esquemas de pirâmide; (i) promove produtos ou serviços comerciais, (j) interfere com o Serviço Mapa de Público, sonda ou tenta sondar, examinar ou testar as vulnerabilidades no Serviço ou sistemas de computador ou de rede do Mapa de Público, ou viole quaisquer medidas de segurança ou autenticação do Mapa de Público, ou (k) esteja em conflito com Acordo, conforme determinado pelo Mapa de Público. Você concorda que o Mapa de Público também pode retomar seu nome de usuário por qualquer motivo.
+\nPor favor, seja cuidadoso sobre o que você torna público no Mapa de Público. O Serviço Mapa de Público inclui características sociais e interativas, incluindo a capacidade de publicar o Conteúdo do Usuário, compartilhar conteúdo, e tornar públicas certas informações sobre você. Lembre-se que a informação compartilhada ou publicamente disponível pode ser usada e compartilhada novamente por outros usuários no Mapa de Público ou em toda a web, então por favor use o Mapa de Público cuidadosamente e gerencie as configurações da sua conta regularmente. O Mapa de Público não tem qualquer responsabilidade por suas escolhas em tornar públicos qualquer ação ou material no Serviço.
+\n
+\n6. Limitações tecnológicas e modificações
+\nVocê entende e concorda que o Mapa de Público não tem nenhuma obrigação de manter, suportar, aperfeiçoar ou atualizar o Serviço, ou fornecer todo ou qualquer conteúdo específico através do Serviço.
+\n
+\n7. Prazo e rescisão
+\nEstes Termos continuarão a ser aplicáveis a você até que sejam rescindidos por você ou pelo Mapa de Público. O Mapa de Público pode rescindir os Termos ou suspender o acesso ao Serviço Mapa de Público, a qualquer momento, inclusive no caso de uso não autorizado real ou suspeito do Serviço Mapa de Público ou a não conformidade com os Termos. 
+\n
+\n8. Limitação
+\nVocê concorda que, na medida do permitido pela legislação aplicável, a sua única e exclusiva solução para qualquer problema ou insatisfação com o Mapa de Público é desinstalar qualquer software Mapa de Público e parar de usar o Serviço Mapa de Público. 
+\nATÉ O LIMITE MÁXIMO PERMITIDO PELA LEGISLAÇÃO, EM HIPÓTESE ALGUMA O MAPA DE PÚBLICO SERÁ RESPONSÁVEL POR (i) QUAISQUER DANOS INDIRETOS, ESPECIAIS, ACIDENTAIS, PUNITIVOS, EXEMPLARES OU INDIRETOS (INCLUINDO PERDA DE USO, DADOS, NEGÓCIOS OU LUCROS), DANOS DECORRENTES DO USO OU IMPOSSIBILIDADE DE USO DO SERVIÇO MAPA DE PÚBLICO, INDEPENDENTEMENTE DA TEORIA JURÍDICA, INDEPENDENTEMENTE DO MAPA DE PÚBLICO TER SIDO AVISADO DA POSSIBILIDADE DE TAIS DANOS, E MESMO QUE UMA SOLUÇÃO TENHA FALHADO EM SEU PROPÓSITO ESSENCIAL; (ii) RESPONSABILIDADE MÁXIMA POR TODAS AS REIVINDICAÇÕES RELATIVAS AO SERVIÇO MAPA DE PÚBLICO.
+\nNada nesses Acordos elimina ou limita a responsabilidade do Mapa de Público por fraude, falsidade ideológica, morte ou lesões pessoais causadas por sua negligência. Alguns aspectos desta seção podem não se aplicar em algumas jurisdições.
+\n
+\n9. Acordo integral
+\nEstes Acordos constituem todos os termos e condições acordadas entre você e o Mapa de Público e substituem quaisquer acordos anteriores em relação ao objeto destes Acordos, orais ou por escrito. Quaisquer termos ou condições adicionais ou diferentes em relação ao objeto dos Acordos em qualquer comunicação oral ou por escrito de você para o Mapa de Público serão nulos. Você declara que não aceitou os Acordos em dependência de quaisquer declarações orais ou por escrito feitas pelo Mapa de Público que não estão contidas nos acordos.
+\n
+\n10. Autonomia
+\nCaso qualquer disposição dos Termos seja considerada inválida ou inexequível, por qualquer motivo ou a qualquer medida, tal invalidade ou inexigibilidade não deve de qualquer forma afetar ou tornar inválidas ou inexequíveis as disposições restantes dos Termos, bem como a aplicação da referida disposição deve ser aplicada até o limite permitido pela legislação.
+\n
+\n11. Escolha de foro, arbitragem obrigatória e local
+\nEstes Acordos estão sujeitos à legislação brasileira, sem levar em conta a escolha ou conflitos de princípios jurídicos. Além disso, você e o Mapa de Público concordam com a jurisdição exclusiva dos tribunais da cidade de São Paulo, Estado de São Paulo, Brasil, para resolver qualquer disputa, reivindicação ou controvérsia que surja em relação a estes Acordos.
+\nObrigado por ler nossos Termos. Esperamos que você goste do Mapa de Público.
+\nContato: lab@labexperimental.org
+\n
+\n
+\n
+\n
+\nPolíticas de Privacidade
+\n
+\nOlá, bem-vindo à nossa Política de Privacidade. 
+\n
+\nEsta Política de Privacidade ajuda você a tomar decisões informadas sobre o seu relacionamento conosco, então por favor leia atentamente. Aqui vamos nós…
+\n
+\n1. Introdução
+\nObrigado por participar da intervenção artística Mapa de Público na Virada Cultural de São Paulo. Para fornecer a você o Serviço Mapa de Público nós precisaremos coletar algumas informações sobre você, e essa Política de Privacidade é onde descrevemos as informações que coletamos, o que fazemos com elas, e como você pode gerenciar e controlar o uso de suas informações. Os dados coletados pelo Mapa de Público devem ser tratados de acordo com as leis da República Federativa do Brasil. Ao usar ou interagir com o Serviço, você está entrando em um contrato vinculativo conosco e consentindo com o uso de suas informações conforme explicado nesta Política de Privacidade.[a] Caso você não concorde com esses termos, por favor não use o Serviço.
+\n
+\n
+\n2. As informações que coletamos
+\n2.1 Dados do cadastro
+\nQuando você se cadastra no Mapa de Público, podemos coletar as informações que solicitamos, como seu nome de usuário, endereço de e-mail, sexo, código postal e país. Podemos armazenar essas informações de modo que ela possa ser utilizada para as finalidades indicadas na Seção 3.
+\n2.2 Utilização, dados do cadastro
+\nQuando você usa o serviço, nós coletamos automaticamente determinadas informações, incluindo: (i) Conteúdo do Usuário que você publicar e/ou contribuir para o Serviço (conforme definido nos Termos e Condições de Uso); (ii) dados técnicos que podem incluir a URL de onde você está vindo, o seu endereço IP, ID único do dispositivo, rede e desempenho do computador, tipo de navegador, idioma e informações de identificação, informações transacionais que possibilitem o gerenciamento de direitos digitais, sistema operacional e versão do aplicativo, e (iii) informação de localização.
+\n
+\n3. Como compartilhamos as informações que coletamos
+\nPodemos compartilhar as informações que coletamos, incluindo a sua informação pessoal, conforme a seguir:
+\n3.1 Encontrando você e compartilhando dentro do Mapa de Público
+\nO Mapa de Público é uma intervenção de arte e tecnologia. A maioria de suas informações no Mapa de Público será transformada em dados abertos (exceto email), e estará disponível publicamente para os outros por padrão, tais como o seu nome e/ou nome de usuário, idade, sexo e localização. Sua atividade no Serviço aparecerá para os data visualizadores que produzirão os mapas a partir desses dados.
+\n
+\n4. Arte e Interatividade
+\nAo utilizar o serviço do Mapa de Público, você entrará em contato com uma conexão gigantesca de outros usuários, gerando uma visualização artística desses fluxos. Acreditamos que a arte e colaboração são ferramentas para uma sociedade mais harmonizada. Muito obrigado!
+\n
+\n5. Fale conosco
+\nCaso você tenha alguma pergunta ou comentário sobre essa Política de Privacidade, por favor entre em contato conosco. 
+\n
+\nContato: lab@labexperimental.org"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
